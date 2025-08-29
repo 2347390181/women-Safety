@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women Safety App</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f6f8fa; margin: 0; }
+        header { background: #e64980; color: white; padding: 1rem; text-align: center; }
+        nav { background: #fff; padding: 1em; box-shadow: 0 2px 4px #ccc; }
+        nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1em; }
+        nav li { display: inline; }
+        nav a { text-decoration: none; color: #e64980; font-weight: bold; }
+        main { padding: 2em; }
+        .emergency-btn { background: #e64980; color: white; border: none; padding: 1em 2em; font-size: 1.2em; border-radius: 5px; cursor: pointer; }
+        .contact-list { margin-top: 1.5em; }
+        .tip-box { background: #fff0f6; border-left: 5px solid #e64980; padding: 1em; margin: 2em 0; }
+        footer { background: #222; color: white; text-align: center; padding: 1em 0; margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Women Safety Web App</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Safety Tips</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <button class="emergency-btn" onclick="sendAlert()">Panic Button (Send SOS Alert)</button>
+        <div class="contact-list">
+            <h2>Emergency Contacts</h2>
+            <ul>
+                <li>Police: 100</li>
+                <li>Ambulance: 101</li>
+                <li>Women Helpline: 1091</li>
+                <li>Trusted Contact: +91-XXXXXXXXXX</li>
+            </ul>
+        </div>
+        <div class="tip-box">
+            <h3>Daily Safety Tip</h3>
+            <p>Always share your real-time location with trusted contacts when traveling alone and avoid isolated areas after dark.</p>
+        </div>
+    </main>
+    <footer>
+        &copy; 2025 Women Safety App. All rights reserved.
+    </footer>
+    <script>
+        function sendAlert() {
+            alert('Emergency alert sent to contacts!');
+            // Real implementation would send SMS, location, etc.
+        }
+    </script>
+</body>
+</html>
